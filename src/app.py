@@ -85,7 +85,7 @@ activities = {
 
 
 @app.get("/")
-def redirect_to_homepage():
+def root():
     """
     Redirect the root URL to the static homepage.
     """
@@ -93,7 +93,7 @@ def redirect_to_homepage():
 
 
 @app.get("/activities")
-def list_activities():
+def get_activities():
     """
     Retrieve the list of all available activities.
     """
